@@ -71,26 +71,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | the query builder class.
 */
 $active_group = 'default';
-$query_builder = TRUE;
+$active_record = TRUE;
 
-$db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'root';
+$db['default']['password'] = 'Cao19891210';
+$db['default']['database'] = 'test';
+$db['default']['dbdriver'] = 'mysql';
+$db['default']['dbprefix'] = '';
+$db['default']['pconnect'] = FALSE;
+$db['default']['db_debug'] = TRUE;
+$db['default']['cache_on'] = FALSE;
+$db['default']['cachedir'] = '';
+$db['default']['char_set'] = 'utf8';
+$db['default']['dbcollat'] = 'utf8_general_ci';
+$db['default']['swap_pre'] = '';
+$db['default']['autoinit'] = TRUE;
+$db['default']['stricton'] = FALSE;
+
+$db['release']['hostname'] = 'localhost';
+$db['release']['username'] = 'root';
+$db['release']['password'] = 'Cao19891210';
+$db['release']['database'] = 'mysql';
+$db['release']['dbdriver'] = 'mysql';
+$db['release']['dbprefix'] = '';
+$db['release']['pconnect'] = FALSE;
+$db['release']['db_debug'] = FALSE;
+$db['release']['cache_on'] = FALSE;
+$db['release']['cachedir'] = '';
+$db['release']['char_set'] = 'utf8';
+$db['release']['dbcollat'] = 'utf8_general_ci';
+$db['release']['swap_pre'] = '';
+$db['release']['autoinit'] = TRUE;
+$db['release']['stricton'] = FALSE;
