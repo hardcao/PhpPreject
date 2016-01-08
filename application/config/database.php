@@ -73,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
+$db['default']['hostname'] = '192.168.0.30';
 $db['default']['username'] = 'root';
 $db['default']['password'] = 'Cao19891210';
 $db['default']['database'] = 'test';
